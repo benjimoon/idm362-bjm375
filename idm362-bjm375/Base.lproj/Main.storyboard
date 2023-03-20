@@ -38,7 +38,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4q0-Do-ORx">
-                                <rect key="frame" x="111" y="378" width="171" height="35"/>
+                                <rect key="frame" x="111" y="408.66666666666669" width="171" height="35"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Click for Motivation"/>
@@ -50,13 +50,15 @@
                         <viewLayoutGuide key="safeArea" id="K5G-2y-8Pu"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="4q0-Do-ORx" firstAttribute="centerY" secondItem="2Cb-GV-muM" secondAttribute="centerY" constant="-30.5" id="0xa-br-fNA"/>
                             <constraint firstItem="ekK-Wd-s5p" firstAttribute="top" secondItem="K5G-2y-8Pu" secondAttribute="top" id="CHh-hn-pnD"/>
                             <constraint firstItem="ekK-Wd-s5p" firstAttribute="centerX" secondItem="2Cb-GV-muM" secondAttribute="centerX" id="H4B-oa-LEL"/>
                             <constraint firstItem="kpN-ql-dwR" firstAttribute="top" secondItem="ekK-Wd-s5p" secondAttribute="bottom" constant="144" id="LAH-je-D0F"/>
                             <constraint firstItem="kpN-ql-dwR" firstAttribute="centerX" secondItem="ekK-Wd-s5p" secondAttribute="centerX" id="XYo-ol-UhZ"/>
                             <constraint firstItem="kpN-ql-dwR" firstAttribute="leading" secondItem="K5G-2y-8Pu" secondAttribute="leading" constant="43" id="ZiE-kH-Yr1"/>
+                            <constraint firstItem="4q0-Do-ORx" firstAttribute="centerX" secondItem="2Cb-GV-muM" secondAttribute="centerX" id="b5j-eL-Uaa"/>
                             <constraint firstItem="4q0-Do-ORx" firstAttribute="centerX" secondItem="2Cb-GV-muM" secondAttribute="centerX" id="m3Q-kH-6YZ"/>
+                            <constraint firstItem="4q0-Do-ORx" firstAttribute="centerX" secondItem="2Cb-GV-muM" secondAttribute="centerX" id="p5c-Lf-BIf"/>
+                            <constraint firstItem="4q0-Do-ORx" firstAttribute="centerY" secondItem="2Cb-GV-muM" secondAttribute="centerY" id="q4t-A0-q35"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Help" image="questionmark.circle.fill" catalog="system" id="Cdt-o4-g9N"/>
