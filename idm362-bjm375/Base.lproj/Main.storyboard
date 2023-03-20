@@ -9,69 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="idm362_bjm375" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GymRem" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wax-7H-mrw">
-                                <rect key="frame" x="152.66666666666666" y="59" width="88" height="24"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the buttons to view your workout" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzg-JF-0me">
-                                <rect key="frame" x="39.666666666666657" y="91" width="314" height="22.666666666666671"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="6OS-qP-u7E">
-                                <rect key="frame" x="44" y="218" width="305.66666666666669" height="34.333333333333343"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="81" translatesAutoresizingMaskIntoConstraints="NO" id="xro-6l-yWt">
-                                        <rect key="frame" x="0.0" y="0.0" width="305.66666666666669" height="34.333333333333336"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLv-4L-ps5">
-                                                <rect key="frame" x="0.0" y="0.0" width="305.66666666666669" height="34.333333333333336"/>
-                                                <color key="tintColor" name="AccentColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Today's Workout"/>
-                                                <connections>
-                                                    <segue destination="OlR-hn-l5d" kind="show" id="R7I-03-Eo4"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="tintColor" name="AccentColor"/>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="5JY-2S-A7J"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
-                        <constraints>
-                            <constraint firstItem="5JY-2S-A7J" firstAttribute="trailing" secondItem="6OS-qP-u7E" secondAttribute="trailing" constant="43.329999999999998" id="5KL-pd-Nbl"/>
-                            <constraint firstItem="wax-7H-mrw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7na-3p-gch"/>
-                            <constraint firstItem="6OS-qP-u7E" firstAttribute="top" secondItem="wax-7H-mrw" secondAttribute="bottom" constant="135" id="KZv-dm-vvt"/>
-                            <constraint firstItem="6OS-qP-u7E" firstAttribute="leading" secondItem="5JY-2S-A7J" secondAttribute="leading" constant="44" id="byG-RX-16K"/>
-                            <constraint firstItem="wax-7H-mrw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="59" id="rcC-Pe-Ejg"/>
-                            <constraint firstItem="qzg-JF-0me" firstAttribute="top" secondItem="wax-7H-mrw" secondAttribute="bottom" constant="8" id="tCI-5B-Qml"/>
-                            <constraint firstItem="qzg-JF-0me" firstAttribute="centerX" secondItem="wax-7H-mrw" secondAttribute="centerX" id="u8b-pz-b6p"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="ycj-72-2PV"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2630" y="134"/>
-        </scene>
         <!--Help-->
         <scene sceneID="7NW-6m-uZ0">
             <objects>
-                <viewController id="Wdc-xJ-xg0" sceneMemberID="viewController">
+                <viewController id="Wdc-xJ-xg0" customClass="HelpViewController" customModule="idm362_bjm375" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Cb-GV-muM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,34 +28,42 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="113" id="u2C-Hu-AUl"/>
                                 </constraints>
-                                <string key="text">To use GymRem, click on the days of the week and implement what work outs you want to do on each day! Use GymRem to remember your workouts throughout the week!</string>
+                                <string key="text">To use GymRem, click on the plus sign in the top right corner of your home page to add exercises for the day! Remember your exercises for the day using GymRem!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="gJ9-co-4QQ">
-                                <rect key="frame" x="76" y="91" width="241" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="help" translatesAutoresizingMaskIntoConstraints="NO" id="ZhE-U1-fhc">
+                                <rect key="frame" x="76" y="91" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4q0-Do-ORx">
+                                <rect key="frame" x="111" y="378" width="171" height="35"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Click for Motivation"/>
+                                <connections>
+                                    <action selector="toggleSound:" destination="Wdc-xJ-xg0" eventType="touchUpInside" id="Ohj-1z-aOw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K5G-2y-8Pu"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="gJ9-co-4QQ" firstAttribute="top" secondItem="ekK-Wd-s5p" secondAttribute="bottom" constant="8" id="6IO-VA-hWD"/>
+                            <constraint firstItem="4q0-Do-ORx" firstAttribute="centerY" secondItem="2Cb-GV-muM" secondAttribute="centerY" constant="-30.5" id="0xa-br-fNA"/>
                             <constraint firstItem="ekK-Wd-s5p" firstAttribute="top" secondItem="K5G-2y-8Pu" secondAttribute="top" id="CHh-hn-pnD"/>
                             <constraint firstItem="ekK-Wd-s5p" firstAttribute="centerX" secondItem="2Cb-GV-muM" secondAttribute="centerX" id="H4B-oa-LEL"/>
                             <constraint firstItem="kpN-ql-dwR" firstAttribute="top" secondItem="ekK-Wd-s5p" secondAttribute="bottom" constant="144" id="LAH-je-D0F"/>
                             <constraint firstItem="kpN-ql-dwR" firstAttribute="centerX" secondItem="ekK-Wd-s5p" secondAttribute="centerX" id="XYo-ol-UhZ"/>
                             <constraint firstItem="kpN-ql-dwR" firstAttribute="leading" secondItem="K5G-2y-8Pu" secondAttribute="leading" constant="43" id="ZiE-kH-Yr1"/>
-                            <constraint firstItem="kpN-ql-dwR" firstAttribute="top" secondItem="gJ9-co-4QQ" secondAttribute="bottom" constant="8" id="cfn-8i-Xcp"/>
-                            <constraint firstItem="gJ9-co-4QQ" firstAttribute="centerX" secondItem="ekK-Wd-s5p" secondAttribute="centerX" id="ifq-5t-K8z"/>
-                            <constraint firstItem="gJ9-co-4QQ" firstAttribute="leading" secondItem="K5G-2y-8Pu" secondAttribute="leading" constant="76" id="ixp-Ty-Fv0"/>
+                            <constraint firstItem="4q0-Do-ORx" firstAttribute="centerX" secondItem="2Cb-GV-muM" secondAttribute="centerX" id="m3Q-kH-6YZ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Help" image="questionmark.circle.fill" catalog="system" id="Cdt-o4-g9N"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcf-pU-1HM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1489.3129770992366" y="133.80281690140845"/>
+            <point key="canvasLocation" x="-2216.030534351145" y="41.549295774647888"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Jko-Ug-Fvl">
@@ -126,25 +75,33 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="a4A-bn-AGq"/>
-                        <segue destination="Wdc-xJ-xg0" kind="relationship" relationship="viewControllers" id="aXc-Nv-BgP"/>
+                        <segue destination="OlR-hn-l5d" kind="relationship" relationship="viewControllers" id="HNm-wo-jqH"/>
+                        <segue destination="Wdc-xJ-xg0" kind="relationship" relationship="viewControllers" id="yet-vv-RRj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YXv-M8-n60" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2173" y="-745"/>
+            <point key="canvasLocation" x="-2213" y="-745"/>
         </scene>
-        <!--Exercises-->
+        <!--GymRem-->
         <scene sceneID="apk-Wu-6OI">
             <objects>
                 <tableViewController id="YLv-vy-g7Y" customClass="TableViewController" customModule="idm362_bjm375" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="vV1-DO-IWN">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemGray6Color"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the plus button to add exercises!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G5F-UG-ZCY">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="XSb-t4-gWE">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XSb-t4-gWE" id="TwV-gC-rM6">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -157,11 +114,11 @@
                             <outlet property="delegate" destination="YLv-vy-g7Y" id="RKh-ie-3Ym"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Exercises" id="yvr-Ko-4gq">
+                    <navigationItem key="navigationItem" title="GymRem" id="yvr-Ko-4gq">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="nhV-1w-58q">
                             <color key="tintColor" name="AccentColor"/>
                             <connections>
-                                <action selector="addWork:" destination="YLv-vy-g7Y" id="W3J-rN-c7J"/>
+                                <action selector="addWork:" destination="YLv-vy-g7Y" id="KJv-Ua-3Ya"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -178,17 +135,17 @@
             <objects>
                 <viewController title="Detail" id="F7D-bR-fCU" customClass="DetailsViewController" customModule="idm362_bjm375" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6RO-ZP-KcT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay motivated!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Soj-eF-9Wu">
-                                <rect key="frame" x="137" y="304" width="119" height="20"/>
+                                <rect key="frame" x="137" y="290" width="119" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2x8-WC-LZS">
-                                <rect key="frame" x="138" y="381" width="117" height="21"/>
+                                <rect key="frame" x="138" y="415.66666666666669" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -212,14 +169,14 @@
             </objects>
             <point key="canvasLocation" x="1042" y="-739"/>
         </scene>
-        <!--Workouts-->
+        <!--Exercises-->
         <scene sceneID="LGD-Jd-4Mm">
             <objects>
                 <navigationController id="OlR-hn-l5d" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Workouts" id="XmL-Ir-Ae5"/>
+                    <tabBarItem key="tabBarItem" title="Exercises" image="house.fill" catalog="system" id="XmL-Ir-Ae5"/>
                     <navigationItem key="navigationItem" id="eH5-ch-uOk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QZb-gv-MJh">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -232,7 +189,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="1024" height="1024"/>
+        <image name="help" width="1024" height="1024"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="questionmark.circle.fill" catalog="system" width="128" height="123"/>

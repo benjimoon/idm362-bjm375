@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import AVFoundation
 
 
 class TableViewController: UITableViewController {
@@ -27,6 +28,9 @@ class TableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -74,6 +78,7 @@ class TableViewController: UITableViewController {
         cell.textLabel?.text = workoutObj.value(forKey: "name") as? String
         
         return cell
+        
     }
     
 
@@ -110,7 +115,7 @@ class TableViewController: UITableViewController {
             
             
             tableView.reloadData()
-        }    
+        }
     }
  
     /*
@@ -155,7 +160,7 @@ class TableViewController: UITableViewController {
         
         present(alertObj, animated: true)
     }
-    
+
     func saveToCore(name: String) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
@@ -175,8 +180,8 @@ class TableViewController: UITableViewController {
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
+        
     }
-    
     
     
     
