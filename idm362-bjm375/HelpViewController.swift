@@ -18,7 +18,7 @@ class HelpViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        let mySound = Bundle.main.path(forResource: "gymaudio", ofType: "mp3", inDirectory: "sounds")
+        let mySound = Bundle.main.path(forResource: "speak/gymaudio", ofType: "mp3")
         do {
             myAudioPlayerObj = try
             AVAudioPlayer(contentsOf: URL(fileURLWithPath: mySound!))
